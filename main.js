@@ -17,6 +17,8 @@ function formatDateTime(date){
 }
 
 var now = new Date();
+now.setSeconds(0);
+now.setMilliseconds(0);
 var next = nextSat(now);
 if (now > next)
     next.setDate(next.getDate() + 7);
